@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('4k-marvel-digital-cartoon-t9z4pnuivn6488jq.jpg');
+            background-size: cover;
+            font-family: 'Borel', cursive;
+            font-family: 'Lumanosimo', cursive;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            text-decoration: none;
+            margin: 5px;
+            padding: 50px;
+            font-size: 33px;
+            color: rgb(255, 255, 255);
+        }
+        li a:hover{color: rgb(255, 234, 234);
+        }
+
+        li a{
+            text-decoration: none;
+        }
+        li{
+            float: left;
+        }
+        img{
+            margin-top: 4%;
+            margin-right: 9%;
+        }
+        h1{
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+   <center> <h1>Trending now india</h1></center>
+
+
+    <ul>
+        <li><a href="songs">Songs</a></li>
+        <li><a href="search">Search</a></li>
+        <li><a href="languages">Languages</a></li>
+        <li><a href="favorite">Favorite</a></li>
+        <li><a href="Trending">Trending</a></li>
+    </ul><br>
+    <center> <img src="images.png"
+        width="70px" height="70px" id="icon"></center>
+        <audio id="mysound">
+        <source src="Spider Man - Bgm ! Instrumental.mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var mysound = document.getElementById("mysound");
+            var icon = document.getElementById("icon");
+            icon.onclick = function() {
+                    if (mysound.paused) {
+                        mysound.play();
+                        icon.src = "pause.png";
+                    } else {
+                        mysound.pause();
+                        icon.src = "play.png";
+                    }
+                }
+        </script>
+     
+     
+     
+</body>
+</html>
